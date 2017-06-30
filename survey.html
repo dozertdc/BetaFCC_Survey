@@ -5,7 +5,6 @@
     <title>Survey Form</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
-    <script src="gender.js"></script>
 </head>
 <body>
     <div id="title">
@@ -20,7 +19,7 @@
             <label id="label" for="DOB">Birthdate: </label><input type="date" required/><br/>
             <ul style="list-style: none;">
                  <li class="radio">
-                    <label>Male<input name="radio-buttons" value="male"  type="radio" id="male" class="gender" ></label>
+                    <label>Male<input name="radio-buttons" value="male"  type="radio" checked="checked" id="male" class="gender" ></label>
                 </li>
                 <li class="radio">
                     <label>Female<input name="radio-buttons" value="female"  type="radio" id="female" class="gender" ></label>
@@ -64,5 +63,6 @@
             <button id="submit" type="submit">Submit</button>
         </form>
     </div>
+    <script src="gender.js"></script>
 </body>
 </html>
