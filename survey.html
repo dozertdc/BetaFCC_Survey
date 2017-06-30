@@ -4,64 +4,66 @@
     <meta charset="UTF-8">
     <title>Survey Form</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <div id="title">
-        <h1>Weightlifting Survey</h1>
-        <p>This survey is to gather information about an upcoming competition.</p>
-    </div>
-    <div class="form">
-        <form id="survey">
-            <label id="label" for="name">Name: </label><input type="text" placeholder="Name" required/><br/>
-            <label id="label" for="email">Email: </label><input type="email" placeholder="Email" required/><br/>
-            <label id="label" for="age">Age: </label><input type="number" placeholder="Age" required/><br/>
-            <label id="label" for="DOB">Birthdate: </label><input type="date" required/><br/>
-            <ul style="list-style: none;">
-                 <li class="radio">
-                    <label>Male<input name="radio-buttons" value="male"  type="radio" checked="checked" id="male" class="gender" ></label>
-                </li>
-                <li class="radio">
-                    <label>Female<input name="radio-buttons" value="female"  type="radio" id="female" class="gender" ></label>
-                </li>
-            </ul>
-            <select id="MensClasses" name="MensClasses" class="dropdown">
-                  <option disabled value>Select an option</option>
-                  <option  value="56">56kg</option>
-                  <option value="62">62kg</option>
-                  <option value="69">69kg</option>
-                  <option value="77">77kg</option>
-                  <option value="85">85kg</option>
-                  <option value="94">94kg</option>
-                  <option value="105">105kg</option>
-                  <option value="105+">105+kg</option>
-            </select>
-            <select id="WomensClasses" name="WomensClasses" class="dropdown">
-                  <option disabled value>Select an option</option>
-                  <option  value="48">48kg</option>
-                  <option value="53">53kg</option>
-                  <option value="58">58kg</option>
-                  <option value="63">63kg</option>
-                  <option value="69">69kg</option>
-                  <option value="75">75kg</option>
-                  <option value="90">90kg</option>
-                  <option value="90+">90+kg</option>
-            </select>
-            <ul id="competitionTypes" style="list-style: none;">
-              <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">Local</label></li>
-              <li class="checkbox"><input name="prefer" value="2" type="checkbox" class="userRatings">Regional</li>
-              <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings">National</label></li>
-              <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="userRatings">International</label></li>
-            <div class="rowTab">
-              <div class="labels">
-                <label for="comments">Any Comments or Suggestions?</label>
-              </div>
-              <div class="rightTab">
-                <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
-              </div>
-            </div>
-            <button id="submit" type="submit">Submit</button>
-        </form>
+    <div class="container">
+        <div id="title">
+            <h1>Weightlifting Survey</h1>
+            <p>This survey is to gather information about an upcoming competition.</p>
+        </div>
+        <div class="form">
+            <form id="survey">
+                <label id="label" for="name">Name: </label><input type="text" placeholder="Name" required/><br/>
+                <label id="label" for="email">Email: </label><input type="email" placeholder="Email" required/><br/>
+                <label id="label" for="age">Age: </label><input type="number" placeholder="Age" required/><br/>
+                <label id="label" for="DOB">Birthdate: </label><input type="date" required/><br/>
+                <ul style="list-style: none;">
+                     <li class="radio">
+                        <label>Male<input name="radio-buttons" value="male"  type="radio" checked="checked" id="male" class="gender" ></label>
+                    </li>
+                    <li class="radio">
+                        <label>Female<input name="radio-buttons" value="female"  type="radio" id="female" class="gender" ></label>
+                    </li>
+                </ul>
+                <select id="MensClasses" name="MensClasses" class="dropdown">
+                      <option disabled value>Select an option</option>
+                      <option  value="56">56kg</option>
+                      <option value="62">62kg</option>
+                      <option value="69">69kg</option>
+                      <option value="77">77kg</option>
+                      <option value="85">85kg</option>
+                      <option value="94">94kg</option>
+                      <option value="105">105kg</option>
+                      <option value="105+">105+kg</option>
+                </select>
+                <select id="WomensClasses" name="WomensClasses" class="dropdown">
+                      <option disabled value>Select an option</option>
+                      <option  value="48">48kg</option>
+                      <option value="53">53kg</option>
+                      <option value="58">58kg</option>
+                      <option value="63">63kg</option>
+                      <option value="69">69kg</option>
+                      <option value="75">75kg</option>
+                      <option value="90">90kg</option>
+                      <option value="90+">90+kg</option>
+                </select>
+                <ul id="competitionTypes" style="list-style: none;">
+                  <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">Local</label></li>
+                  <li class="checkbox"><input name="prefer" value="2" type="checkbox" class="userRatings">Regional</li>
+                  <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings">National</label></li>
+                  <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="userRatings">International</label></li>
+                <div class="rowTab">
+                  <div class="labels">
+                    <label for="comments">Any Comments or Suggestions?</label>
+                  </div>
+                  <div class="rightTab">
+                    <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
+                  </div>
+                </div>
+                <button id="submit" type="submit">Submit</button>
+            </form>
+        </div>
     </div>
     <script src="gender.js"></script>
 </body>
